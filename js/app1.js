@@ -23,3 +23,13 @@ function anterior(e){
 }
 const ant = document.getElementById("ant");
 ant.addEventListener("click", anterior);
+
+function selecionar(e){
+    e.preventDefault();
+    i = Number(cbbox.value)\;
+    imagem.setAttribute("src",`./img/foto${i}.jpg`);
+}
+
+const cbbox = document.getElementById("combobox");
+cbbox.addEventListener("change", selecionar);
+
